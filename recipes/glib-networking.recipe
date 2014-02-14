@@ -3,8 +3,11 @@ import os
 
 class Recipe(recipe.Recipe):
     name = 'glib-networking'
-    version = '2.34.2'
     licenses = [License.LGPLv2Plus]
+    version = 'master'
+    remotes = {'origin': 'git://git.gnome.org/glib-networking'}
+    commit = 'origin/master'
+    config_sh = 'sh ./autogen.sh'
     configure_options = "--without-ca-certificates --enable-more-warnings"
     deps = ['glib', 'gnutls']
 

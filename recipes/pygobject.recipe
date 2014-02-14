@@ -3,10 +3,11 @@
 
 class Recipe(recipe.Recipe):
     name = 'pygobject'
-    version = '3.11.5'
-    stype = SourceType.TARBALL
-    url = 'http://ftp.gnome.org/pub/GNOME/sources/pygobject/3.11/pygobject-%(version)s.tar.xz'
+    version = 'master'
+    remotes = {'origin': 'git://git.gnome.org/pygobject'}
+    commit = 'origin/master'
     licenses = [License.LGPLv2_1Plus]
+    config_sh = 'sh ./autogen.sh'
     deps = ['glib', 'py2cairo']
     make_check = None  # disabled until we fix the checks
 

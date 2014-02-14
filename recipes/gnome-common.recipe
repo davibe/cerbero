@@ -1,0 +1,8 @@
+# -*- Mode: Python -*- vi:si:et:sw=4:sts=4:ts=4:syntax=python
+
+class Recipe(recipe.Recipe):
+    name = 'gnome-common'
+    version = '3.10.0'
+    stype = SourceType.TARBALL
+    url = 'http://ftp.gnome.org/pub/gnome/sources/gnome-common/3.10/gnome-common-3.10.0.tar.xz'
+
