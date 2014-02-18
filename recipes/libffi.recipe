@@ -20,8 +20,8 @@ class Recipe(recipe.Recipe):
     name = 'libffi'
     licenses = [License.BSD_like]
     version = 'master'
-    remotes = {'origin': 'https://github.com/atgreen/libffi.git'}
-    commit = 'origin/master'
+    remotes = {'origin': 'https://github.com/davibe/libffi.git'}
+    commit = 'origin/osx'
 
     #patches = ['libffi/0002-makefiles-fix-toolexeclibdir.patch']
 
